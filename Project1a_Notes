@@ -1,0 +1,15 @@
+#Data Structures Project 1a 
+
+To-Do-List: 
+1.Change line numbering after delete
+2.Create addNodeBefore method in DoubleLinkedList class
+3.Work on "Write file to Disk"
+4.Work on Exit and Save
+5.Work on Print Number of Characters
+6.Change the way the program is called from command line
+
+Questions: 
+1.When file is saved to disk, do I need to re-load the file?
+2.When lines are added or deleted, does the number of lines and characters change even if I don't save the file?
+3.If a line in the file is larger than MAXLENGTH do I ignore it or I half save it? 
+4.Togle lines: Do I print the file reversed? 
