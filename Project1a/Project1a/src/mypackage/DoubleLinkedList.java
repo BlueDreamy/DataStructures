@@ -95,14 +95,14 @@ public class DoubleLinkedList {
 			return tail;
 		}
 		else {
-			delNode.previous.next = delNode.previous;
 			delNode.previous.next = delNode.next;
+			delNode.next.previous = delNode.previous;
 			Node current = delNode;
 			while ( current != tail.next) {
 				current.count = current.count - 1;
 				current = current.next;
 			}
-			return delNode; 
+			return delNode.next; 
 		}
 		
 	}
@@ -138,7 +138,7 @@ public class DoubleLinkedList {
 			Node addingNode = new Node(data,count);
 			addingNode.next = cur.next;
 			addingNode.previous = cur;
-			addingNode.next = cur.next;
+			cur.next.previous = addingNode;
 			cur.next = addingNode;
 			while (cur != tail) {
 				cur = cur.next;
@@ -174,9 +174,9 @@ public class DoubleLinkedList {
 		else {
 			int count = cur.count;
 			Node addingNode = new Node(data,count);
-			addingNode.previous = cur.previous.next; 
-			cur.previous.next = addingNode; 
+			addingNode.previous = cur.previous; 
 			addingNode.next = cur; 
+			cur.previous.next = addingNode; 
 			cur.previous = addingNode;
 			while (cur != tail.next) {
 				count++;
