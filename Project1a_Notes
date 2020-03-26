@@ -1,13 +1,21 @@
 #Data Structures Project 1a 
 
+@Version 1.0
+
 To-Do-List: 
 1.Change line numbering after delete [x]
 2.Create addNodeBefore method in DoubleLinkedList class  [x]
 3.Work on "Write file to Disk" [x]
 4.Work on Exit and Save [x]
 5.Work on Print Number of Characters [x]
-6.Change the way the program is called from command line
+6.Change the way the program is called from command line [x]
 7. Delete unused System.out.print() [x]
 8. Work on what happens if file doesn't exist [x]
 9. Work on "Bad command" [x]
 10. Handle NullPointerExceptions [x]
+
+@Version 1.1 
+
+To-Do-List: 
+1.NullPointerException Handling [x]
+
